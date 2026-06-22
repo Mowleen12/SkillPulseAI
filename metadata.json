@@ -1,0 +1,6 @@
+{
+  "name": "SkillPulse AI",
+  "description": "An AI-powered SaaS career intelligence platform analyzing trending skills, job roles, salary insights, and future technology demand in the Indian tech market.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

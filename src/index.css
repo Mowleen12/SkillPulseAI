@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-primary: #2563EB;
+  --color-brand-secondary: #0F172A;
+  --color-brand-accent: #06B6D4;
+  --color-brand-success: #10B981;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes float-slower {
+  0%, 100% { transform: translateY(0px) scale(1) rotate(0deg); }
+  50% { transform: translateY(-15px) scale(1.03) rotate(1deg); }
+}
+
+.animate-float-slow {
+  animation: float-slower 8s ease-in-out infinite;
+}
+
+@keyframes float-faster {
+  0%, 100% { transform: translateY(0px) scale(1) rotate(0deg); }
+  50% { transform: translateY(-8px) scale(0.98) rotate(-1deg); }
+}
+
+.animate-float-fast {
+  animation: float-faster 5s ease-in-out infinite;
+}
+
+@keyframes grid-drift {
+  0% { background-position: 0 0; }
+  100% { background-position: 40px 40px; }
+}
+
+.bg-dot-grid {
+  background-size: 20px 20px;
+  background-image: radial-gradient(#e2e8f0 1.2px, transparent 1.2px);
+  animation: grid-drift 20s linear infinite;
+}
+
+/* Glassmorphism Preset */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(241, 245, 249, 0.8);
+}
+
+.glass-panel-dark {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
